@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Atelier store</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="wrapper">
+     <form action="backend_signup.php" method="POST" class="sign-up">
+        <h1>Sign up</h1>
+
+        <div class="sign-up-name">
+            <div>
+                <label for="name">First name</label>
+                <input name="name" type="text" required>
+            </div>
+             <div>            
+                <label for="last_name">Last name</label>
+                <input name="last_name" type="text" required>
+            </div>
+        </div>
+        
+       
+        <div class="sign-up-email">
+            <label for="email">Email</label>
+            <input name="email" type="email" required placeholder="Email@example.com">
+        </div>
+
+        <div class="sign-up-password">
+            <div>
+                <label for="password">Password</label>
+                <input name="password" type="password" required>
+            </div>
+            <div>
+                <label for="repeat_password">Repeat Password</label>
+                <input name="repeat_password" type="password" required>
+            </div>
+        </div>
+
+        <button type="submit">
+            Register 
+        </button>
+        
+      
+     </form>
+
+    </div>
+    
+</body>
+</html>

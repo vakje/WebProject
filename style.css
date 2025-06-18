@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    margin:0;
+    padding:0;
+    font-family: "Red Hat Text", sans-serif;
+    background-color:#FAF0E6;
+}
+h1{
+    margin:0;
+    text-align:center;
+}
+
+.wrapper{
+    height:100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.sign-in{
+    box-shadow:0px 0px 10px black;
+    padding:3rem;
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+    border-radius:0.5rem;
+    font-size:1.25rem;
+    background-color:#F0E4CC; 
+
+    
+}
+.sign-in div{
+    display:flex;
+    flex-direction:column;
+    gap:0.5rem;
+    width: 100%;
+    max-width: 500px; /* Limits width on large screens */
+    box-sizing: border-box;
+}
+
+.sign-in div input,.sign-up div input{
+    padding:0.5rem;
+    font-size:1.25rem;
+    border:1px solid black;
+    border-radius:0.5rem;
+    background-color:#FAF0E6;
+
+}
+button,a{
+    font-size:1.25rem;
+    padding: 0.5rem;
+    border:1px solid #333333;
+    border-radius:0.5rem;
+    background-color: #333333;
+    color: #FFC67D;
+    cursor:pointer;
+    transition:all 0.2s;
+}
+button:hover,a:hover{
+    background-color:#FFC67D;
+    border:1px solid #FFC67D;
+    color:#333333;
+}
+a{
+    text-align:center;
+    text-decoration:none;
+}
+
+.sign-up{
+    box-shadow:0px 0px 10px black;
+    padding:3rem;
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+    border-radius:0.5rem;
+    font-size:1.25rem;
+    background-color:#F0E4CC; 
+    
+}
+
+.sign-up-email{
+    display:flex;
+    flex-direction:column;
+}
+
+.sign-up-name,.sign-up-password{
+    display:flex;
+    gap:1rem;
+    flex:1;
+    width:100%;
+}
+
+.sign-up-name div,.sign-up-password div{
+    display:flex;
+    flex-direction:column;
+    
+}
+
+@media (max-width: 600px) {
+    .sign-up-name,
+    .sign-up-password {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+
+
+
+.main-page-wrapper{
+    display:flex;
+    justify-items:center;
+    gap:0.7rem;
+    padding:2rem;
+    flex-wrap:wrap;
+    margin-top:5%;
+}
+
+.main-page-header,.cart-page-header{
+    background-color:white;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:90%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding-left:5rem;
+    padding-right:5rem;
+}
+
+.shop-title{
+    background: linear-gradient(to right, #FFC67D, #FF8C42);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main-page-header a{
+    background-color:#FFC67D;
+    padding:0.5rem;
+    padding-top:0.8rem;
+    padding-right:0.6rem;
+    border:none;
+}
+
+.cart-img{
+    width:2rem;
+}
+
+.product-container{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    width:fit-content;
+    gap:0.5rem;
+    background-color:white;
+    padding:2rem;
+}
+
+.product-image{
+    width:20rem;
+    height:20rem;
+    object-fit:contain;
+}
+
+.product-name{
+    font-size:1.5rem;
+}
+
+.product-price{
+    font-size:3rem;
+}
+
+.add-cart-btn{
+    font-size:1rem;
+    padding:1rem 1.5rem;
+}
+
+.shop-title-cart{
+    background: linear-gradient(to right, #FFC67D, #FF8C42);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight:bold;
+    border:none;
+    color:hsl(0, 0%, 0%);
+    font-size:2rem;
+    cursor:pointer;
+}
+
+.shop-title-cart:hover{
+    background-color:white;
+    border:none;
+}
+
+
+.shop-title-cart span{
+    color:#FFC67D;
+}
+
+.cart-wrapper{
+    display:flex;
+    flex-direction:column;
+    margin-top:5%;
+    padding:2rem;
+    gap:1rem;
+}
+
+.cart-product-container{
+    display:grid;
+    grid-template-columns:1fr 2fr 2fr 2fr;
+    align-items:center;
+    background-color:white;
+    height:15rem;
+    padding:1rem;
+}
+
+.cart-product-image{
+    width:10rem;
+}
+
+.cart-product-name,.cart-product-price{
+    font-size:2rem;
+}
+
+.rem-cart-btn{
+    font-size:1rem;
+    background-color:white;
+    color:red;
+    border:1px solid red;
+    height:30%;
+    width:20%;
+    transition:all 0.3s;
+}
+
+.rem-cart-btn:hover{
+    background-color:red;
+    color:white;
+}
+
+.check-out-btn{
+    padding:1rem;
+    margin:1rem;
+    font-size:2rem;
+}
+
+.checkout-wrapper{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    height:100vh;
+    gap:1rem;
+}
+
+.checkout-wrapper button{
+    padding:2rem;
+}
+
+.totalPrice{
+    border-top:1px solid rgba(0, 0, 0, 1);
+    padding-top:1rem;
+    text-align:right;
+}
+
+.price-container{
+    display:flex;
+    flex-direction:column;
+    background-color:white;
+    padding:2rem;
+    gap:1.5rem;
+}
+
+.price-container div{
+    display:flex;
+    justify-content:space-between;
+    gap:5rem;
+}
+
+@media (min-width:0px) and (max-width:1450px){
+   
+
+    .shop-title-cart{
+        font-size:1.8rem;
+    }
+
+    .cart-page-header{
+        bottom:90%;
+        justify-content:center;
+    }
+
+    .cart-product-container{
+        display:flex;
+        flex-direction:column;
+        gap:1.25rem;
+    }
+    
+    .cart-product-image{
+        width:5rem;
+    }
+
+    .cart-product-name{
+        font-size:1rem;
+    }
+
+    .cart-product-price{
+        margin:0;
+    }
+
+    .rem-cart-btn{
+        width:100%;
+
+    }
+}
+
+@media (min-width:0px) and (max-width:400px){
+     .cart-wrapper{
+        margin-top:25%;
+    }
+}
+
+@media (min-width:401px) and (max-width:650px){
+     .cart-wrapper{
+        margin-top:15%;
+    }
+}
+
+@media (min-width:650px) and (max-width:1330px){
+     .cart-wrapper{
+        margin-top:10%;
+    }
+}
+
+.success-container{
+    display:none;
+    align-items:center;
+    justify-content:center;
+}
+
+.success{
+    display:flex;
+    background-color:rgba(0,0,0,0.9);
+    gap:1rem;
+    padding:2rem;
+    border-radius:1rem;
+    align-items:center;
+    animation-name:fadeInOut;
+    animation-duration:1s;
+}
+
+.success h1{
+    font-size:1.25rem;
+    font-weight:500;
+    color:white;
+}
+
+.success img{
+    width:3rem;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateY(50px); }
+  10% { opacity: 1; transform: translateY(0); }
+  90% { opacity: 1; transform: translateY(0); }
+  100% {  opacity: 0;transform: translateY(50px); }
+}
