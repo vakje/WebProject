@@ -2,7 +2,7 @@
 
 This is a prototype e-commerce web application built using **PHP**, **HTML**, **CSS**, and **JavaScript**. It was created as part of my journey into full-stack development and simulates a basic store workflow without a database.
 
----
+
 
 ## Tech Stack
 
